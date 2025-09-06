@@ -1,4 +1,4 @@
-﻿namespace Soenneker.Blazor.Consumers.Core.Abstract;
+namespace Soenneker.Blazor.Consumers.Core.Abstract;
 
 /// <summary>
 /// A class that represents the core Blazor Consumer, providing no additional functionality than access to Soenneker.Blazor.ApiClient

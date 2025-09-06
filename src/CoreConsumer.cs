@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging;
 using Soenneker.Blazor.ApiClient.Abstract;
 using Soenneker.Blazor.Consumers.Core.Abstract;
 
