@@ -1,3 +1,4 @@
+using System;
 using Microsoft.Extensions.Logging;
 using Soenneker.Blazor.ApiClient.Abstract;
 using Soenneker.Blazor.Consumers.Core.Abstract;
@@ -17,8 +18,17 @@ public class CoreConsumer : ICoreConsumer
 
     protected CoreConsumer(IApiClient apiClient, ILogger<CoreConsumer> logger, string prefixUri)
     {
+        ArgumentNullException.ThrowIfNull(apiClient);
+        ArgumentNullException.ThrowIfNull(logger);
+        ArgumentException.ThrowIfNullOrWhiteSpace(prefixUri);
+
+        string normalizedPrefix = prefixUri.TrimEnd('/');
+
+        if (normalizedPrefix.Length == 0)
+            throw new ArgumentException("The URI prefix must contain more than path separators.", nameof(prefixUri));
+
         ApiClient = apiClient;
         Logger = logger;
-        PrefixUri = prefixUri;
+        PrefixUri = normalizedPrefix;
     }
 }

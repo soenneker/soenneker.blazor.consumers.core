@@ -1,7 +1,7 @@
 namespace Soenneker.Blazor.Consumers.Core.Abstract;
 
 /// <summary>
-/// A class that represents the core Blazor Consumer, providing no additional functionality than access to Soenneker.Blazor.ApiClient
+/// Marks an API consumer built on the shared Blazor API client, logger, and normalized URI prefix provided by <c>CoreConsumer</c>.
 /// </summary>
 public interface ICoreConsumer
 {
