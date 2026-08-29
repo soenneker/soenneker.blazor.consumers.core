@@ -4,7 +4,7 @@ using Soenneker.Blazor.Consumers.Core.Abstract;
 
 namespace Soenneker.Blazor.Consumers.Core;
 
-///<inheritdoc cref="ICoreConsumer"/>
+/// <inheritdoc cref="ICoreConsumer"/>
 public class CoreConsumer : ICoreConsumer
 {
     protected readonly IApiClient ApiClient;
