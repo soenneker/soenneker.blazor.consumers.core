@@ -45,7 +45,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Blazor.ApiClient" Version="11.0.3329" />
+        <PackageReference Include="Soenneker.Blazor.ApiClient" Version="11.0.3330" />
     </ItemGroup>
     <ItemGroup>
     </ItemGroup>
